@@ -59,18 +59,18 @@ console.log(streamersLegends);
 // introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si
 // introduzco 'i', me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
 
-// let streamerSearch = document.querySelector('[data-function="toFilterStreamers"]');
+let streamerSearch = document.querySelector('[data-function="toFilterStreamers"]');
 
-// streamerSearch.addEventListener("keydown", event => {
+streamerSearch.addEventListener("keydown", event => {
 
-//   if (event.key === "Enter" && streamerSearch.value != "") {
+  if (event.key === "Enter" && streamerSearch.value != "") {
 
-//     console.log(streamers.filter(streamer => streamer.name.includes(streamerSearch.value)));
-//     streamerSearch.value = "";
+    console.log(streamers.filter(streamer => streamer.name.includes(streamerSearch.value)));
+    streamerSearch.value = "";
 
-//   };
+  };
 
-// });
+});
 
 // 5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola
 // los streamers que incluyan la palabra introducida en el input. De esta forma, si
